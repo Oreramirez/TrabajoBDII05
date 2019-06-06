@@ -85,23 +85,7 @@
 \date{Mayo 13, 2019} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
-\noindent En este trabajo se realizará un estudio de las tecnologías de virtualización de
-contenedores con el fin de implementar y poner en marcha un sistema que permita
-orquestar el despliegue de aplicaciones sobre un entorno empresarial.
-Para ello, se realizará en primera instancia un análisis de los sistemas de virtualización
-más habituales para continuar introduciendo los conceptos y sistemas de virtualización
-de contenedores. Una vez introducida la parte teórica se analizan distintas
-herramientas de virtualización de contenedores centrándonos en la herramienta
-Docker para la cual se detalla su arquitectura, funcionamiento y proceso de instalación
-para finalizar con un par de ejemplos prácticos de despliegue de servicios.
-A continuación, una vez que ya hemos implementado y analizado un sistema de
-virtualización de contenedores como tecnología necesaria de base, pasamos a
-estudiar distintas soluciones del mercado para implementar un sistemas de
-orquestación basado en microservicios para el despliegue de aplicaciones de carácter
-corporativo. Finalizamos con la implantación, instalación y puesta en marcha del
-sistema estudiado acompañado de unos ejemplos de orquestación usando dos
-aplicaciones de código abierto que se ven bastante habitualmente en los entornos
-corporativos actuales para dar soporte a distintas soluciones.
+\noindent Las bases de datos relacionales son una colección de elementos de datos organizados en un conjunto de tablas formalmente descritas desde la que se puede acceder a los datos o volver a montarlos de muchas maneras diferentes sin tener que reorganizar las tablas de la base. por otro lado las bases de datos NOSQL aparecieron como una necesidad para el  manejo de información  voluminosa y distribuida en los  grandes sitios web pero serán soluciones para las grandes empresas y las medianas empresas? solucionan los problemas que las bases de datos Relacionales solucionan?. Que tipo de problemas solucionan? Este artículo presenta este modelo y sus actuales logros y resultados.
 \end{abstract}
 }
 
@@ -119,12 +103,10 @@ corporativos actuales para dar soporte a distintas soluciones.
 
 \section{Introducción}
 
-\lettrine[nindent=0em,lines=2]{L}a tecnología llego para complementar y completar la virtualización de servidores es la
-virtualización de contenedores de aplicaciones. Esta tecnología va un paso mas allá en el
-paradigma de la virtualización, permitiendo no sólo el salto de virtualizar servidores sino también
-de virtualizar directamente un contenedor donde se ejecuta una aplicación, permitiendo de este
-modo una mayor abstracción aislando la componente "lógica de la aplicación" del componente
-“sistema operativo”.
+\lettrine[nindent=0em,lines=2]{L}as bases de datos (BD) tradicionales son las relacionales que usan un lenguaje Estándar para su manipulación y gestión , el SQL que nace en 1974 basado en Modelo de EF COD. SQL tiene más de 37 años de vida. Son ejemplos de bases de datos relacionales: ORACLE, MYSQL, SQL Server, POTGRESS, DB2, etc..Su éxito se basó en que son una solución para los problemas de gestión y estructuración  de la información  de las organizaciones, con un fundamento matemático muy fuerte, lenguaje estandarizado (aceptado y adoptado)  para su gestión (SQL) , con metodologías estructuradas formales para el diseño de los sistemas de información de las organizaciones y con principios de diseño  como la regla ACID (atómica consistente aislada y Durable) . estas plataformas tienen muchas herramientas desarrolladas.
+Las bases de datos NOSQL son un conjunto de bases de datos que no se ajustan al modelo de bases de datos relacionales y sus características, estas no tienen esquemas  , no usan SQL ni permiten joins, no garantizan la propiedad ACID,  escalan horizontalmente, hacen uso amplio de la memoria principal del computador, resuelven el problema de los altos volúmenes de información y la inmensa cantidad de consultas y transacciones diarias, en resumen no son relacionales.
+Pero en qué consisten? Porque surgieron? cual es la mejor solución para un problema x determinado ¿ para qué tipo de problemas se debe considerar las alternativas NOSQL? Se debería usar una Solución NOSQL para un problema que tradicionalmente se ha resuelto con bases de datos relacionales? Que se debe tener en cuenta? Reemplazarán las bases de datos relacionales ?
+Este trabajo pretende dar algunas respuestas a estas inquietudes que genera la tecnología de bases de datos NOSQL que vienen en vertiginoso desarrollo , especialmente desde el 2009.
 
 
 \section{Objetivos}
