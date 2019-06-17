@@ -19,10 +19,11 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[twoside,twocolumn]{article}
+\documentclass[twoside,onecolumn]{article}
 
 \usepackage{blindtext} % Package to generate dummy text throughout this template 
-
+\usepackage{graphicx}
+\graphicspath{ {Imagenes/} }
 \usepackage[sc]{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 \linespread{1.05} % Line spacing - Palatino needs more space between lines
@@ -112,10 +113,9 @@ Este trabajo pretende dar algunas respuestas a estas inquietudes que genera la t
 \section{Objetivos}
 \begin{flushright}
 \begin{itemize}
-\lettrine[nindent=0em,lines=2]{S}e busca saber un poco mas sobre:
+Se busca saber un poco mas sobre:
 \\
 %------------------------------------------------
-\textbf{}\\
 \textbf{}\\
 - Las bases de datos relacionales y no relacionales.
 \textbf{}\\
@@ -135,7 +135,7 @@ Structured Query language (SQL) o lenguaje de consulta estructurada, utiliza un 
 Se compone de una o varias tablas y cada tabla puede contener múltiples relaciones. En el siguiente elemento pongo como ejemplo en como está estructurada una sencilla base de datos por medio de tablas.
 \textbf{}\\
 
-\textbf{IMAGEN sql1}\\
+\includegraphics[scale=0.5]{sql1}
 \textbf{}\\
 Las tablas representan la entidad de cada modelo de datos. Las relaciones permiten garantizar la persistencia de datos, evita la duplicidad de datos y controla la eliminación en cascada. Para ingresar un nuevo nuevo evento, bastaría con ingresar un nuevo registro en la tabla events.\textbf{}\\
 SQL cuenta con un lenguaje de alto nivel que permite manipular la base de datos casi de cualquier forma. Por su manera de operar ayuda a mantener la integridad de los datos.
@@ -145,6 +145,9 @@ SQL cuenta con un lenguaje de alto nivel que permite manipular la base de datos 
 \textbf{}\\
 \textbf{}\\
 \textbf{}\\
+\textbf{}\\
+\textbf{}\\
+
  Por ejemplo:
 \textbf{}\\
 \textbf{}\\
@@ -160,9 +163,6 @@ INSERT INTO categories VALUES (Varonil, Femenil, mixto)
 \textbf{}\\
 Ejemplos de sistemas de gestión de base de datos son: MySQL, MariaDB, PostgreSQL.\textbf{}\\
 
- \textbf{}\\
-\textbf{}\\
-
 
 \subsection{Base de datos NoSQL}
 
@@ -176,11 +176,14 @@ Algunos tipos de bases de datos NoSQL incluyen diferentes tipos de almacenamient
 \textbf{}\\
 \textbf{}\\
 
+\includegraphics[scale=0.3]{sqlynosql}
 
+\textbf{}\\
 \subsection{Formatos}
+
 La información puede organizarse en tablas o en documentos. Cuando organizamos información en un Excel, lo hacemos en formato tabla y, cuando los médicos hacen fichas a sus pacientes, están guardando la información en documentos. Lo habitual es que las bases de datos basadas en tablas sean bases de datos relacionales y las basadas en documentos sean no relacionales, pero esto no tiene que ser siempre así. En realidad, una tabla puede transformarse en documentos, cada uno formado por cada fila de la tabla. Solo es una cuestión de visualización.
 \textbf{}\\
-\textbf{ IMAGEN nosql1}\\
+\includegraphics[scale=0.5]{nosql1}
 \textbf{}\\
 Los dos esquemas de la imagen contienen exactamente la misma información. Lo único que cambia aquí es el formato: cada documento de la figura de la derecha es una fila de la figura de la izquierda.
 \textbf{}\\
@@ -191,7 +194,7 @@ Se ve más claro en la tabla, ¿verdad? Lo que pasa es que a menudo en una base 
 Por ejemplo, en el documento JSON de la imagen que se muestra a continuación, al tener elementos jerárquicos, es más difícil plasmarlo en una tabla plana. Una solución sería plasmarlo en varias tablas y, por tanto, necesitar de relaciones.
 
 
-\textbf{ IMAGEN nosql2}\\
+\includegraphics[scale=0.5]{nosql2}
 
 Esto explica por qué las bases de datos relacionales suelen servirse de tablas y las no relacionales de documentos JSON. En cualquier caso, a día de hoy, \textbf{las bases de datos más competitivas suelen permitir, de una forma u otra, operaciones de los dos tipos.}\\ 
 \textbf{}\\
@@ -217,7 +220,10 @@ Esto explica por qué las bases de datos relacionales suelen servirse de tablas 
 \textbf{}\\
 -	Los datos deben cumplir requisitos de integridad tanto en tipo de dato como en compatibilidad.\\
 \textbf{}\\
-
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
 \textbf{Desventajas de las Bases de Datos relacionales}\\
 
 -	La atomicidad de las operaciones juega un papel crucial en el rendimiento de las bases de datos.\\
@@ -346,6 +352,8 @@ es/definicion/virtualizacion-basada-en-contenedores-virtualizacion-a-nivel-de-si
 \newblock {\em }
  
 \end{thebibliography}
+
+
 
 %----------------------------------------------------------------------------------------
 \end{itemize}
